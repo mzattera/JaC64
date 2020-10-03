@@ -1,8 +1,8 @@
-# *** Quick hack: log opcode execution ****
+Quick hack: log opcode execution
 
-...and a fork of Cat's Eye Technologies' own [fork](https://github.com/catseye/JaC64) of JaC64 distribution on [SourceForge](https://sourceforge.net/p/jac64/).
+This is  a fork of Cat's Eye Technologies' own [fork](https://github.com/catseye/JaC64) of JaC64 distribution on [SourceForge](https://sourceforge.net/p/jac64/).
 
-Purpose of this fork is to add opcode logging feature to the emulator.
+Purpose of this project is to add opcode logging feature to the emulator.
 
 That is, the emulator will be able to log into a text file the list of opcodes being executed.
 Please notice that about 250'000 opcodes are logged in a second, hence the log file might grow huge.
