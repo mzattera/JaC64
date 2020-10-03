@@ -1,4 +1,4 @@
-Quick hack: log opcode execution
+# Quick hack: log opcode execution
 
 This is  a fork of Cat's Eye Technologies' own [fork](https://github.com/catseye/JaC64) of JaC64 distribution on [SourceForge](https://sourceforge.net/p/jac64/).
 
