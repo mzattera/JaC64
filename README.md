@@ -1,4 +1,4 @@
-# *** This is A BAD HACK ****
+# *** Quick hack: log opcode execution ****
 
 ...and a fork of Cat's Eye Technologies' own [fork](https://github.com/catseye/JaC64) of JaC64 distribution on [SourceForge](https://sourceforge.net/p/jac64/).
 
