@@ -9,7 +9,11 @@
  */
 
 package com.dreamfabric.jac64;
-import java.io.*;
+
+import java.io.BufferedInputStream;
+import java.io.InputStream;
+
+import com.dreamfabric.c64utils.OpLogger;
 
 /**
  * MOS6510Core "implements" the 6510 processor in java code.
@@ -312,7 +316,12 @@ public abstract class MOS6510Core extends MOS6510Ops {
 
     // Ok no interrupts, execute instruction
     // fetch instruction!
-    int data = INSTRUCTION_SET[fetchByte(pc++)];
+    
+    // Hacked code logger
+    int _tmp = fetchByte(pc++);
+    OpLogger.instance().log(_tmp);
+    int data = INSTRUCTION_SET[_tmp];
+        	
     int op = data & OP_MASK;
     int addrMode = data & ADDRESSING_MASK;
     boolean read = (data & READ) != 0;

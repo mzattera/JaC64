@@ -264,6 +264,10 @@ public class C64Test implements ActionListener, Runnable {
     saveDisk.addActionListener(this);
     pan.add(fileName = new JTextField(""));
 
+    JButton b = new JButton("Toggle OpLogger [OFF]");
+    pan.add(b);
+    b.addActionListener(OpLogger.instance());
+
     list = new JList();
     list.addMouseListener(new MouseAdapter() {
 	public void mouseClicked(MouseEvent e) {
